@@ -1,59 +1,88 @@
-# TableNow - Restaurant Booking Platform
+# TableNow - Restaurant Booking App
 
-A modern restaurant booking platform built with Next.js, React, and Tailwind CSS. This application allows users to browse restaurants, make reservations, and manage their bookings.
+TableNow is a modern web application for restaurant reservations, built with Next.js and TypeScript. The application allows users to browse restaurants, make reservations, and manage their bookings.
 
 ## Features
 
-- Restaurant search with filters for location, cuisine, and more
-- Detailed restaurant pages with information, photos, and reviews
-- Reservation system with date and time selection
-- User account management
-- Responsive design for mobile and desktop
+- 🍽️ Browse restaurants with detailed information
+- 🔍 Filter restaurants by location, cuisine, and more
+- 📅 Real-time availability checking and booking
+- 👤 User authentication and account management
+- 📱 Responsive design for all device sizes
+- 📊 Reservation management system
 
 ## Tech Stack
 
-- **Framework**: Next.js 15
-- **UI**: React 19
-- **Styling**: Tailwind CSS 4
-- **Form Components**: React DatePicker
-- **Date Handling**: date-fns
-- **TypeScript** for type safety
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Styling**: Tailwind CSS for responsive design
+- **Forms**: React Hook Form for form validation
+- **Date Handling**: date-fns for date manipulation
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16.x or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Suliko007/tablenow-restaurant-booking.git
+cd tablenow-restaurant-booking
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
 ## Deployment
 
-This project can be deployed through multiple methods:
+### Deploying to Vercel
 
-### Deploy to Vercel (Recommended)
+The easiest way to deploy this app is using Vercel:
 
-The easiest way to deploy this application is with Vercel:
+1. Create a Vercel account at [vercel.com](https://vercel.com) if you don't have one.
+2. Install the Vercel CLI:
+```bash
+npm install -g vercel
+```
 
-1. Fork this repository
-2. Sign up/in to [Vercel](https://vercel.com)
-3. Create a new project and import your forked repository
-4. Vercel will automatically detect Next.js and configure the build settings
-5. Click "Deploy"
+3. Run the following command from your project directory:
+```bash
+vercel
+```
 
-The application will be built and deployed to a domain provided by Vercel.
+4. Follow the prompts to complete deployment.
 
-### Manual Deployment
+### Environment Variables
 
-To deploy manually:
+For a production deployment, you may need to set the following environment variables:
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Build the application: `npm run build`
-4. Start the server: `npm start`
+- `NEXT_PUBLIC_API_URL`: Your API endpoint (if using an external API)
+- `NEXT_PUBLIC_SITE_URL`: The base URL of your site
 
-## Local Development
+## Project Structure
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Environment Variables
-
-No environment variables are required for basic functionality.
+- `/app` - Next.js application routes and pages
+- `/components` - Reusable UI components
+- `/data` - Static data (sample restaurants for demo)
+- `/public` - Static assets like images and icons
+- `/types` - TypeScript type definitions
+- `/styles` - Global styles and CSS variables
 
 ## Contributing
 
@@ -61,4 +90,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- Images from [Unsplash](https://unsplash.com/)
+- Icons from [Heroicons](https://heroicons.com/)
